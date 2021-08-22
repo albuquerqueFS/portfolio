@@ -1,0 +1,23 @@
+@mixin for-phone-only
+  @media (max-width: 767.98px)
+    @content
+
+@mixin for-tablet-only
+  @media (min-width: 768px) and (max-width: 1199.98px)
+    @content
+
+@mixin for-desktop-only
+  @media (min-width: 1200px)
+    @content
+
+@mixin flx-center($direction: row, $jstfy: center)
+  display: flex
+  flex-direction: $direction
+  justify-content: $jstfy
+  align-items: center
+
+@function calculateRem($size)
+  @return $size / 16px * 1rem
+
+@mixin fontSize($size)
+  font-size: calculateRem($size)
