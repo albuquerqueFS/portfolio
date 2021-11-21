@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +9,4 @@ export class AppComponent implements OnInit {
   title = 'AAAAAAAAAAAA';
 
   ngOnInit(): void {}
-
-  goTo(section: string): void {
-    document.getElementById(section)?.scrollIntoView();
-  }
 }

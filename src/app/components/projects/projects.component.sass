@@ -1,0 +1,17 @@
+@import '../../../_base'
+@import '../../../_responsive'
+
+.container
+  width: 100%
+  @include flx-center(column, flex-start, flex-start)
+
+.title
+  margin-bottom: 2rem
+
+.projects-list
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  // grid-template-columns: 1fr 1fr 1fr
+  grid-auto-flow: row
+  column-gap: 16px
+  row-gap: 16px

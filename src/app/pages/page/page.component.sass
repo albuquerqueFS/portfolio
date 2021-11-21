@@ -1,0 +1,104 @@
+@import '../../../_responsive'
+@import '../../../_base'
+
+.main__right, .right
+  @include for-phone-only
+    width: 100vw
+    left: 0
+  @include for-tablet-only
+    width: 100vw
+    left: 0
+  position: absolute
+  left: 18vw
+  min-height: 100vh
+  @include flx-center(column, flex-start, center)
+
+  &__section
+    padding: 32px
+    height: 100%
+    max-height: 100vh
+    scroll-snap-align: start
+
+  .about
+    @include flx-center(column, flex-start, flex-start)
+    &__layer1
+      width: 100%
+      @include flx-center($direction: row, $jstfy: flex-end)
+
+    &__language
+      // reset css
+      appearance: none
+      border: 0
+      outline: 0
+      // style
+      width: 8rem
+      height: 3rem
+      padding: 0 3rem 0 1rem
+      box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2)
+      background-color: $dark-grey
+      cursor: pointer
+      font-family: $font1
+      font-size: 1rem
+      color: white
+      option
+        font-family: $font1
+        color: #f3f3f3
+        background-color: $dark-grey
+      /* Remove focus outline */
+      &:focus
+        outline: none
+      /* Remove IE arrow */
+      &::-ms-expand
+        display: none
+
+    &__layer2
+      @include flx-center($direction: column, $jstfy: flex-start)
+      padding-top: 1rem
+      text-align: left
+
+    &__bar
+      height: 1px
+      width: 100%
+      max-width: 800px
+      background-color: $darker-grey
+      animation: expand-line 1s
+      animation-timing-function: cubic-bezier(.97,.14,.79,.77)
+
+    &__title
+      letter-spacing: 2px
+      margin: 10px 0
+      width: 100%
+      max-width: 800px
+      font-family: $font1
+      font-weight: 600
+      @include fontSize(47px)
+      color: $dark-grey
+
+    &__layer3
+      @include flx-center($direction: column, $jstfy: flex-start)
+      padding: 2rem 0rem
+      text-align: left
+
+    &__subtitle
+      width: 100%
+      max-width: 80vw
+      font-family: $font1
+      @include fontSize(22px)
+      margin: 10px 0
+
+    &__experience
+      width: 100%
+      max-width: 80vw
+      font-family: $font1
+      // @include fontSize(16px)
+      font-size: 1rem
+      margin: 10px 0 30px 0
+      line-height: 1.5rem
+      a
+        @include a-links()
+  .projects
+    width: 100%
+    @include flx-center(column, flex-start, flex-start)
+  .socials
+    width: 100%
+    @include flx-center(column, flex-start, flex-start)

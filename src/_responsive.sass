@@ -10,14 +10,22 @@
   @media (min-width: 1200px)
     @content
 
-@mixin flx-center($direction: row, $jstfy: center)
+@mixin flx-center($direction: row, $jstfy: center, $align: center)
   display: flex
   flex-direction: $direction
   justify-content: $jstfy
-  align-items: center
+  align-items: $align
 
 @function calculateRem($size)
   @return $size / 16px * 1rem
 
 @mixin fontSize($size)
   font-size: calculateRem($size)
+
+@mixin a-links()
+  text-decoration: none
+  color: $links
+  &:hover
+    text-decoration: underline
+    color: $links-hover
+    transition: .25s

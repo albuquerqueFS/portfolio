@@ -1,0 +1,36 @@
+@import '../../../../_base'
+@import '../../../../_responsive'
+
+.card
+  height: 100%
+  width: 100%
+  min-width: 15rem
+  padding: 20px
+  border: 1px solid #c4c4c4
+  border-radius: 3px
+  font-family: $font1
+  @include flx-center(column, flex-start, flex-start)
+
+  &__name
+    margin-bottom: 20px
+    font-size: 1.2rem
+    font-weight: 600
+    color: #2e0052
+    text-transform: uppercase
+    text-decoration: none
+    transition: .25s
+    &:hover
+      color: #9000ff
+  &__info
+    @include flx-center(row, space-between, flex-start)
+    margin: 10px 0px
+  &__labels
+    @include flx-center(column, flex-start, flex-start)
+    text-align: left
+  &__infos
+    @include flx-center(column, flex-start, flex-end)
+    text-align: righ
+  label
+    margin: 10px 0px
+    font-family: 'Lato'
+    font-size: 1rem

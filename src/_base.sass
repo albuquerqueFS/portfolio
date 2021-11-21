@@ -1,0 +1,25 @@
+@import '_responsive'
+
+$bg-grey: #ebebeb
+$dark-grey: #3a3a3a
+$darker-grey: #1f1f1f
+$links: #1948af
+$links-hover: #002470
+$glass: rgba(255, 255, 255, 0.2)
+$glass-icon: rgba(255, 255, 255, 0.3)
+
+$font1: 'Playfair Display'
+
+html
+  @include for-phone-only
+    font-size: 12px
+
+h1
+  font-family: $font1
+  font-weight: 500
+  @include fontSize(74px)
+
+h2
+  font-family: $font1
+  font-weight: 500
+  @include fontSize(36px)

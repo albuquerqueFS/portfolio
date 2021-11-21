@@ -1,0 +1,59 @@
+@import '../../../../_responsive'
+@import '../../../../_base'
+
+.main__left, .left
+  @include for-phone-only
+    display: none
+  @include for-tablet-only
+    display: none
+  @include flx-center(center, center, center)
+  position: fixed
+  top: 0
+  left: 0
+  height: 100vh
+  width: 18vw
+
+  &__menu
+    @include for-tablet-only
+      @include flx-center(row, flex-start, flex-start)
+      margin-left: auto
+      width: 100%
+
+  &__item
+    @include for-tablet-only
+      width: auto
+    width: 100%
+    @include fontSize(36px)
+    text-align: right
+    font-family: $font1
+    color: $dark-grey
+    margin: 40px 0
+    position: relative
+    overflow: hidden
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background-color: $darker-grey
+      z-index: -1
+      transition: 1s
+      transform: scaleX(0) scaleY(1)
+      transition: all 0.4s
+      transition-timing-function: cubic-bezier(.86,.01,.15,.99)
+      -webkit-transform-origin: bottom right
+      transform-origin: bottom right
+    &:hover
+      cursor: pointer
+      color: white
+      transition: .5s
+      &::before
+        transform: scaleX(1.1) scaleY(1)
+
+.left__item--activated
+  color: white
+  transition: .5s
+  &::before
+    transform: scaleX(1.1) scaleY(1) !important

@@ -1,0 +1,18 @@
+<div class="container">
+
+  <h2 class="title">My Github Projects</h2>
+
+  <div class="projects-list">
+    <ng-container *ngIf="gitRepos$ | async as repos; else loadingRepos">
+      <div class="projects" *ngFor="let repo of repos">
+        <app-card [repo]="repo"></app-card>
+      </div>
+    </ng-container>
+
+    <ng-template #loadingRepos>
+      <small>Loading Repos</small>
+    </ng-template>
+  </div>
+
+  <!-- <h2>Some github project you may find interesting</h2> -->
+</div>

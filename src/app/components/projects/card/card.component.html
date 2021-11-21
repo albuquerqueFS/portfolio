@@ -1,0 +1,26 @@
+<!--
+Project URL: svn_url
+Data de criação: created_at
+Linguagem: language
+description
+name
+full_name
+ -->
+<div class="card">
+  <a [href]="repo.svn_url" class="card__name">{{repo.name}}</a>
+  <small>{{repo.created_at ? (repo.created_at | date: 'dd/MM/YYYY' ) : '-'}}</small>
+  <div class="card__info">
+    <div class="card__labels">
+      <label>Fullname</label>
+      <label>Created at</label>
+      <label>Language</label>
+      <label>Description</label>
+    </div>
+    <div class="card__infos">
+      <!-- <label>{{repo.fullname ? repo.fullname : '-'}}</label> -->
+      <!-- <label>{{repo.created_at ? (repo.created_at | date: 'dd/MM/YYYY' ) : '-'}}</label> -->
+      <label>{{repo.language ? repo.language : '-'}}</label>
+      <!-- <label>{{repo.description ? repo.description : '-'}}</label> -->
+    </div>
+  </div>
+</div>
