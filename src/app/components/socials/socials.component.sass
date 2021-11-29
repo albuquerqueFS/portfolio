@@ -1,0 +1,22 @@
+@import '../../../_base'
+@import '../../../_responsive'
+
+.socials
+  min-height: 40vh
+  &__text
+    margin-top: 2rem
+    font-family: $font1
+    font-size: 1rem
+  &__link-wrap
+    margin-top: 2rem
+    @include flex(row, flex-center, center)
+    svg
+      height: 1.8rem
+    a
+      font-family: $font2
+      font-weight: 700
+      color: $dark-grey
+      text-decoration: none
+      margin-left: 1rem
+      font-size: 2rem
+      letter-spacing: 5px

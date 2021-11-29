@@ -10,8 +10,10 @@
     left: 0
   position: absolute
   left: 18vw
+  width: 82vw
   min-height: 100vh
   @include flx-center(column, flex-start, center)
+  overflow-x: hidden
 
   &__section
     padding: 32px
@@ -20,6 +22,7 @@
     scroll-snap-align: start
 
   .about
+    width: 100%
     @include flx-center(column, flex-start, flex-start)
     &__layer1
       width: 100%
@@ -90,7 +93,6 @@
       width: 100%
       max-width: 80vw
       font-family: $font1
-      // @include fontSize(16px)
       font-size: 1rem
       margin: 10px 0 30px 0
       line-height: 1.5rem
@@ -98,7 +100,5 @@
         @include a-links()
   .projects
     width: 100%
-    @include flx-center(column, flex-start, flex-start)
   .socials
     width: 100%
-    @include flx-center(column, flex-start, flex-start)

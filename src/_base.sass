@@ -9,6 +9,7 @@ $glass: rgba(255, 255, 255, 0.2)
 $glass-icon: rgba(255, 255, 255, 0.3)
 
 $font1: 'Playfair Display'
+$font2: 'Lato'
 
 html
   @include for-phone-only
@@ -23,3 +24,9 @@ h2
   font-family: $font1
   font-weight: 500
   @include fontSize(36px)
+
+@mixin flex($direction: row, $jstfy: center, $align: center)
+  display: flex
+  flex-direction: $direction
+  justify-content: $jstfy
+  align-items: $align
