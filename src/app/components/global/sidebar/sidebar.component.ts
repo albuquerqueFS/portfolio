@@ -22,17 +22,18 @@ export class SidebarComponent implements OnInit {
   highlightNavbar() {
     const about = document.getElementById('about');
     const projects = document.getElementById('projects');
-    const designs = document.getElementById('designs');
-    const socials = document.getElementById('socials');
+    const blog = document.getElementById('blogs');
+
+    const projectOffsetTop = projects?.offsetTop!! * 0.8;
 
     if (
-      window.scrollY > about?.offsetTop!! &&
-      window.scrollY < about?.offsetHeight!!
+      window.scrollY > about?.offsetTop!! * 0.8 &&
+      window.scrollY < about?.offsetHeight!! * 0.8!!
     ) {
       this.activeSection = 'about';
     } else if (
-      window.scrollY > projects?.offsetTop!! - 100 &&
-      window.scrollY < projects?.offsetTop!! + projects?.offsetHeight!!
+      window.scrollY > projectOffsetTop &&
+      window.scrollY < projects?.offsetTop!! * 0.8 + projects?.offsetHeight!!
     ) {
       this.activeSection = 'projects';
       // } else if (
@@ -41,10 +42,10 @@ export class SidebarComponent implements OnInit {
       // ) {
       //   this.activeSection = 'designs';
     } else if (
-      window.scrollY >
-      socials?.offsetTop!! - socials?.offsetHeight!!
+      window.scrollY > blog?.offsetTop!! * 0.8 - blog?.offsetHeight!! &&
+      window.scrollY < blog?.offsetTop!! * 0.8 + blog?.offsetHeight!!
     ) {
-      this.activeSection = 'socials';
+      this.activeSection = 'blogs';
     }
   }
 

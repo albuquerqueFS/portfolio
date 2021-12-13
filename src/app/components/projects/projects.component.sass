@@ -2,18 +2,29 @@
 @import '../../../_responsive'
 
 .container
-  height: 100%
-  width: 100%
-  @include flx-center(column, flex-start, flex-start)
+  height: auto
 
 .title
-  margin-bottom: 2rem
+  margin: 2rem 0
 
 .projects
-  // @include flx-center(row, flex-start, flex-start)
-  // flex-wrap: wrap
+  @include flx-center(row, flex-start, flex-start)
+  flex-wrap: wrap
+  gap: 2rem
   width: 100%
-  display: grid
-  row-gap: 1rem
-  justify-content: space-between
-  grid-template-columns: repeat(auto-fill, 300px)
+  height: auto
+
+.big-cards
+  @include for-phone-only
+    @include flex(column, flex-start, center)
+  @include flx-center(row, flex-start, center)
+  position: relative
+  gap: 1rem
+  margin-bottom: 2rem
+  cursor: grab
+  overflow-x: hidden
+  overflow-y: hidden
+  will-change: transform
+  user-select: none
+  cursor: pointer
+  touch-action: none

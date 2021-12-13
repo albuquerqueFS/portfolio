@@ -1,11 +1,17 @@
 <div class="main__left left">
   <ul class="left__menu">
+
     <li class="left__item" [ngClass]="{ 'left__item--activated': activeSection === 'about' }" (click)="goTo('about')">
       ABOUT</li>
+
     <li class="left__item" [ngClass]="{ 'left__item--activated': activeSection === 'projects' }"
       (click)="goTo('projects')">PROJECTS</li>
     <!-- <li class="left__item" [ngClass]="{ 'left__item--activated': activeSection === 'designs' }" (click)="goTo('designs')">DESIGNS</li> -->
-    <li class="left__item" [ngClass]="{ 'left__item--activated': activeSection === 'socials' }"
-      (click)="goTo('socials')">SOCIALS</li>
+
+    <!-- <li class="left__item" [ngClass]="{ 'left__item--activated': activeSection === 'socials' }"
+      (click)="goTo('socials')">SOCIALS</li> -->
+
+    <li class="left__item" [ngClass]="{ 'left__item--activated': activeSection === 'blogs' }" (click)="goTo('blogs')">
+      BLOG</li>
   </ul>
 </div>

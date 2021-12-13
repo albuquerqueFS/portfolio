@@ -1,11 +1,26 @@
-<div class="container">
+<section class="container">
 
   <h2 class="title">Here's some projects you may find interesting</h2>
 
+  <div id="big-cards" class="big-cards">
+    <app-big-card [src]="'/assets/img/githubpagessite.png'" [title]="'1st concept portfolioo'" [date]="'2020/01'"
+      [link]="'https://albuquerquefs.github.io/henrique-albuquerque/'">
+    </app-big-card>
+    <app-big-card [src]="'/assets/img/netlifysite.png'" [title]="'2st concept portfolioo'" [date]="'2021/01'"
+      [link]="'https://not-null.netlify.app'">
+    </app-big-card>
+  </div>
+  <!--
+  https://albuquerquefs.github.io/henrique-albuquerque/
+  https://not-null.netlify.app/me
+   -->
+
+  <h2 class="title">Github Projects</h2>
+
   <ng-container *ngIf="gitRepos$ | async as repos; else loadingRepos">
-    <div class="projects">
-      <app-card class="card" [repo]="repo" *ngFor="let repo of repos"></app-card>
-    </div>
+    <section class="projects">
+      <app-card [repo]="repo" *ngFor="let repo of repos"></app-card>
+    </section>
   </ng-container>
 
   <ng-template #loadingRepos>
@@ -13,4 +28,4 @@
   </ng-template>
 
   <!-- <h2>Some github project you may find interesting</h2> -->
-</div>
+</section>

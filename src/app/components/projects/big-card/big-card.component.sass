@@ -1,0 +1,46 @@
+@import '../../../../_base'
+@import '../../../../_responsive'
+
+.card
+  margin: 1rem .5rem
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px
+  border: 0px solid #c4c4c4
+  width: clamp(30rem, 50vw, 100rem)
+  transition: all .5s
+  @include flex(column)
+  @include for-phone-only
+    width: 100%
+  &__img
+    img
+      pointer-events: none
+      width: 100%
+      filter: grayscale(100%)
+      transition: all .5s
+      @include for-phone-only
+        filter: grayscale(0%)
+  &:hover
+    img
+      filter: grayscale(0%)
+  &:active
+    cursor: grabbing
+    cursor: -webkit-grabbing
+    transform: scale(1.04)
+  &__texts
+    margin: 0 .5rem
+    width: 100%
+    @include flex(column, flex-start, flex-start)
+    p
+      margin: 1rem 1rem
+    .title
+      font-family: $font2
+      font-size: 2rem
+      font-weight: 300
+      text-transform: uppercase
+      transition: all .5s
+      &:hover
+        cursor: pointer
+        color: $links-hover
+        text-decoration: underline
+    .date
+      font-family: $font2
+      font-size: .8rem

@@ -12,13 +12,14 @@
   left: 18vw
   width: 82vw
   min-height: 100vh
+  height: auto
   @include flx-center(column, flex-start, center)
   overflow-x: hidden
 
   &__section
     padding: 32px
-    height: 100%
-    max-height: 100vh
+    height: auto
+    // max-height: 100vh
     scroll-snap-align: start
 
   .about
@@ -74,7 +75,7 @@
       max-width: 800px
       font-family: $font1
       font-weight: 600
-      @include fontSize(47px)
+      font-size: 2.9rem
       color: $dark-grey
 
     &__layer3
@@ -86,13 +87,13 @@
       width: 100%
       max-width: 80vw
       font-family: $font1
-      @include fontSize(22px)
+      font-size: 1.3rem
       margin: 10px 0
 
     &__experience
       width: 100%
       max-width: 80vw
-      font-family: $font1
+      font-family: $font2
       font-size: 1rem
       margin: 10px 0 30px 0
       line-height: 1.5rem
@@ -100,5 +101,7 @@
         @include a-links()
   .projects
     width: 100%
+    height: auto
   .socials
     width: 100%
+    height: auto
