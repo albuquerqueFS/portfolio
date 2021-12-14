@@ -11,6 +11,8 @@
     @include flex(row, flex-center, center)
     svg
       height: 1.5rem
+      @include for-phone-only
+        height: 1rem
     a
       font-family: $font2
       font-weight: 700
@@ -19,3 +21,5 @@
       margin-left: 1rem
       font-size: 1.3rem
       letter-spacing: 5px
+      @include for-phone-only
+        font-size: 1rem

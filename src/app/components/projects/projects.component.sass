@@ -15,8 +15,6 @@
   height: auto
 
 .big-cards
-  @include for-phone-only
-    @include flex(column, flex-start, center)
   @include flx-center(row, flex-start, center)
   position: relative
   gap: 1rem
@@ -28,3 +26,8 @@
   user-select: none
   cursor: pointer
   touch-action: none
+  @include for-phone-only
+    @include flex(column, flex-start, center)
+    cursor: none
+    will-change: auto
+    user-select: none
