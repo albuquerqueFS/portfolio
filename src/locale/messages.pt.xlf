@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" target-language="pt-BR" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="f0381dcb09f961433c9a2fd47085691de3473b0e" datatype="html">
+        <source><x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2&gt;"/><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div
+      style=&quot;
+        margin-right: 1rem;
+        width: 2rem;
+        height: 2px;
+        background-color: #dadada;
+      &quot;
+    &gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/> Techs i worked with and where <x id="START_TAG_DIV_1" ctype="x-div_1" equiv-text="&lt;div
+      style=&quot;
+        margin-left: 1rem;
+        width: 100%;
+        height: 2px;
+        background-color: #dadada;
+      &quot;
+    &gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/><x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2&gt;"/><x id="START_TAG_DIV_4" ctype="x-div_4" equiv-text="&lt;div class=&quot;flex-horizontal&quot;&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngFor=&quot;let tech of techs&quot;&gt;"/><x id="START_TAG_DIV_3" ctype="x-div_3" equiv-text="&lt;div class=&quot;tech-container&quot;&gt;"/><x id="START_TAG_DIV_2" ctype="x-div_2" equiv-text="&lt;div class=&quot;tech-title-container&quot;&gt;"/><x id="TAG_IMG" ctype="image" equiv-text="&lt;img [src]=&quot;tech.companyLogo&quot; alt=&quot;&quot; class=&quot;tech-company-logo&quot; /&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{ tech.description }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/><x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul class=&quot;tech-list&quot;&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li *ngFor=&quot;let framework of tech.frameworks&quot; class=&quot;tech-list-item&quot;&gt;"/><x id="TAG_IMG_1" ctype="x-img_1" equiv-text="&lt;img [src]=&quot;framework.icon&quot; /&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ framework.name }}"/> <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></source>
+        <target><x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2&gt;"/><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div
+      style=&quot;
+        margin-right: 1rem;
+        width: 2rem;
+        height: 2px;
+        background-color: #dadada;
+      &quot;
+    &gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/> Tecnologias com as quais trabalhei e onde <x id="START_TAG_DIV_1" ctype="x-div_1" equiv-text="&lt;div
+      style=&quot;
+        margin-left: 1rem;
+        width: 100%;
+        height: 2px;
+        background-color: #dadada;
+      &quot;
+    &gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/><x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2&gt;"/><x id="START_TAG_DIV_4" ctype="x-div_4" equiv-text="&lt;div class=&quot;flex-horizontal&quot;&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngFor=&quot;let tech of techs&quot;&gt;"/><x id="START_TAG_DIV_3" ctype="x-div_3" equiv-text="&lt;div class=&quot;tech-container&quot;&gt;"/><x id="START_TAG_DIV_2" ctype="x-div_2" equiv-text="&lt;div class=&quot;tech-title-container&quot;&gt;"/><x id="TAG_IMG" ctype="image" equiv-text="&lt;img [src]=&quot;tech.companyLogo&quot; alt=&quot;&quot; class=&quot;tech-company-logo&quot; /&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{ tech.description }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/><x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul class=&quot;tech-list&quot;&gt;"/><x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li *ngFor=&quot;let framework of tech.frameworks&quot; class=&quot;tech-list-item&quot;&gt;"/><x id="TAG_IMG_1" ctype="x-img_1" equiv-text="&lt;img [src]=&quot;framework.icon&quot; /&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ framework.name }}"/> <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/><x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/techs/techs.component.html</context>
+          <context context-type="linenumber">2,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6a33aa32ed2968545e89fe2107ee6bcb1a2bff15" datatype="html">
+        <source>Where to find me?</source>
+        <target>Onde me encontrar?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/techs/techs.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="22d63c6582d41873a9cc748271831631ab25356a" datatype="html">
+        <source>Hi, i&apos;m Henrique Albuquerque.</source>
+        <target>Olá, eu sou Henrique Albuquerque.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/page/page.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="60afa0afc49e265026b0dd95b039e1533a434307" datatype="html">
+        <source> I&apos;m a software developer based in São Paulo, Brazil. 🇧🇷 </source>
+        <target> Eu sou um desenvolvedor de software em São Paulo, Brasil. 🇧🇷 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/page/page.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e7e0306bc19b679cb5d1bf586d6bd02fffb8c78f" datatype="html">
+        <source>Experiences</source>
+        <target>Experiências</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/page/page.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="035f40085131d0e86ec45944ba256c6a98203a93" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>2020/01<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - Internship <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.safra.com.br/&quot;&gt;"/>at Bank Safra<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>2020/01<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - Estágio <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.safra.com.br/&quot;&gt;"/>no Banco Safra<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/page/page.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ffe875b8bc569b06c686bbcb7a5929cedb00d8ec" datatype="html">
+        <source> Initiated my career by maintaining an Oracle database, developing and optimizing PL/SQL procedures, functions, and tables for massive data processing. Gained deep insights into high-volume data handling, creating processes that aggregated millions of rows from external services, delivering reliable performance under demanding conditions. </source>
+        <target> Iniciei minha carreira mantendo um banco de dados Oracle, desenvolvendo e otimizando procedimentos PL/SQL, funções e tabelas para processamento massivo de dados. Adquiri profundo conhecimento no manuseio de grandes volumes de dados, criando processos que agregavam milhões de linhas de serviços externos, entregando desempenho confiável em condições exigentes. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/page/page.component.html</context>
+          <context context-type="linenumber">19,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1c674dbfdf1b7aaafffad0e28c75d422ee0e779e" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>2021/06<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - Junior Software Engineer <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.safra.com.br/&quot;&gt;"/> at Bank Safra<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>2021/06<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - Engenheiro de Software Júnior <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.safra.com.br/&quot;&gt;"/> no Banco Safra<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/page/page.component.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4a978b4c81696c9044adeb82aa3d352f3b748140" datatype="html">
+        <source> Lead the development of a new back-office platform for the Private Banking team, utilizing Angular and .NET Core. Collaborated with another engineer to architect and implement a system that streamlined investment account management and automated email reporting, significantly boosting operational efficiency for banking teams. </source>
+        <target> Liderei o desenvolvimento de uma nova plataforma de back-office para a equipe de Private Banking, utilizando Angular e .NET Core. Colaborei com outro engenheiro para arquitetar e implementar um sistema que simplificou a gestão de contas de investimento e automatizou relatórios por e-mail, aumentando significativamente a eficiência operacional das equipes bancárias. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/page/page.component.html</context>
+          <context context-type="linenumber">33,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d74dc42552832cacb2243433b6bea8565ea55e0a" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>2022/08 - Current<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - Software Engineer <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.bcg.com/x&quot;&gt;"/>at BCG<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>2022/08 - Atual<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - Engenheiro de Software <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.bcg.com/x&quot;&gt;"/>na BCG<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/page/page.component.html</context>
+          <context context-type="linenumber">44,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="db82286375cfb95ca03bb76c5d7ac854566b7951" datatype="html">
+        <source> At one of the world’s leading AI and data science consultancies, I work closely with U.S. teams to design and build advanced data science platforms. Specializing in front-end development, I leverage modern frameworks like Angular and React, implementing cutting-edge architectures such as monorepos and microfrontends to enhance scalability and maintainability. </source>
+        <target> Em uma das principais consultorias de IA e ciência de dados do mundo, trabalho de perto com equipes dos EUA para projetar e construir plataformas avançadas de ciência de dados. Especializando-me em desenvolvimento front-end, utilizo frameworks modernos como Angular e React, implementando arquiteturas inovadoras como monorepos e microfrontends para aumentar a escalabilidade e a manutenibilidade. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/page/page.component.html</context>
+          <context context-type="linenumber">47,54</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

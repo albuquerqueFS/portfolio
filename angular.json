@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "AAAAAAAAAAAA": {
+      "i18n": {
+        "locales": {
+          "pt": "src/locale/messages.pt.xlf",
+          "en": "src/locale/messages.en.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -26,16 +32,17 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.sass"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.sass"],
             "scripts": []
           },
           "configurations": {
+            "pt": {
+              "localize": ["pt"]
+            },
+            "en": {
+              "localize": ["en"]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -71,6 +78,12 @@
             "browserTarget": "AAAAAAAAAAAA:build"
           },
           "configurations": {
+            "pt": {
+              "browserTarget": "AAAAAAAAAAAA:build:pt"
+            },
+            "en": {
+              "browserTarget": "AAAAAAAAAAAA:build:en"
+            },
             "production": {
               "browserTarget": "AAAAAAAAAAAA:build:production"
             }
@@ -89,13 +102,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.sass"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.sass"],
             "scripts": []
           }
         },

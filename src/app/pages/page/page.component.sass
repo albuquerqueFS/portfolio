@@ -8,9 +8,9 @@
   @include for-tablet-only
     width: 100vw
     left: 0
-  position: absolute
-  left: 18vw
-  width: 82vw
+  width: 100%
+  max-width: 1100px
+  margin: 0 auto
   min-height: 100vh
   height: auto
   @include flx-center(column, flex-start, center)
@@ -28,6 +28,12 @@
     &__layer1
       width: 100%
       @include flx-center($direction: row, $jstfy: flex-end)
+
+    &__separator
+      width: 2px
+      height: 2rem
+      background-color: $dark-grey
+      margin: .25rem 2rem
 
     &__language
       // reset css
@@ -56,9 +62,12 @@
         display: none
 
     &__layer2
-      @include flx-center($direction: column, $jstfy: flex-start)
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
       padding-top: 1rem
-      text-align: left
+      text-align: center
 
     &__bar
       height: 1px
@@ -79,8 +88,9 @@
       color: $dark-grey
 
     &__layer3
-      @include flx-center($direction: column, $jstfy: flex-start)
-      padding: 2rem 0rem
+      @include flx-center($direction: column, $jstfy: flex-start, $align: flex-start)
+      padding: 0 0
+      padding-top: 2rem
       text-align: left
 
     &__subtitle
@@ -90,12 +100,21 @@
       font-size: 1.3rem
       margin: 10px 0
 
-    &__experience
+    &__experiencetitle
       width: 100%
       max-width: 80vw
+      // padding-left: 2rem
+      font-size: 1.15rem
+      line-height: 2rem
       font-family: $font2
+
+    &__experience
+      font-weight: bold
+      padding-top: 1rem
+      width: 100%
+      max-width: 80vw
+      // padding-left: 1rem
       font-size: 1rem
-      margin: 10px 0 30px 0
       line-height: 1.5rem
       a
         @include a-links()

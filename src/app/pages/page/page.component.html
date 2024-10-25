@@ -1,52 +1,61 @@
 <div class="main__right right">
-
   <section id="about" class="right__section about">
-
-    <!-- <div class="about__layer1">
-      <select class="about__language" name="" id="">
-        <option value="1">EN-US</option>
-        <option value="2">PT-BR</option>
-      </select>
-    </div> -->
-
     <div class="about__layer2">
-      <h1 class="about__title">Hi, i'm Henrique Albuquerque.</h1>
-      <h1 class="about__title">I'm a software developer based in São Paulo, Brazil.</h1>
+      <h1 class="about__title" i18n>Hi, i'm Henrique Albuquerque.</h1>
+      <h1 class="about__title" i18n>
+        I'm a software developer based in São Paulo, Brazil. 🇧🇷
+        <!-- Sou um desenvolvedor de software baseado em São Paulo, Brasil. 🇧🇷 -->
+      </h1>
 
       <div class="about__bar"></div>
     </div>
 
     <div class="about__layer3">
-      <h3 class="about__subtitle">Experience</h3>
-      <p class="about__experience">
-        <b>2020/01</b> - IT Intership at <a href="https://www.safra.com.br/">Bank Safra</a>. Givin support to existing
-        applications in ASP.net and developing the intern database with PL/SQL.
-        <br> <br>
-        <b>2021/06</b> - Fullstack Developer at <a href="https://www.safra.com.br/">Bank Safra</a>. Mapping, prototyping
-        and developing applications with Angular, NodeJS and .NET CORE.
+      <h3 class="about__subtitle" i18n>Experiences</h3>
+      <p class="about__experience" i18n>
+        <b>2020/01</b> - Internship
+        <a href="https://www.safra.com.br/">at Bank Safra</a>.
+      </p>
+      <p class="about__experiencetitle" i18n>
+        Initiated my career by maintaining an Oracle database, developing and
+        optimizing PL/SQL procedures, functions, and tables for massive data
+        processing. Gained deep insights into high-volume data handling,
+        creating processes that aggregated millions of rows from external
+        services, delivering reliable performance under demanding conditions.
+      </p>
 
-      <h3 class="about__subtitle">About me</h3>
-      <p class="about__experience">
-        I've been working and studying front-end development since 2019. I love css and i'm a big enthusiast of threejs
-        creative websites.
-        <br>
-        I'm quite experienced in developing Angular applications, i've working with it for about a year right now. Also
-        familiar with API development in NodeJS and .NET CORE.
-        <br>
-        For my designs, my tool of choice is always Figma.
-        <br>
+      <!-- <div class="about__separator"></div> -->
+      <br />
+      <p class="about__experience" i18n>
+        <b>2021/06</b> - Junior Software Engineer
+        <a href="https://www.safra.com.br/"> at Bank Safra</a>.
+      </p>
+      <p class="about__experiencetitle" i18n>
+        Lead the development of a new back-office platform for the Private
+        Banking team, utilizing Angular and .NET Core. Collaborated with another
+        engineer to architect and implement a system that streamlined investment
+        account management and automated email reporting, significantly boosting
+        operational efficiency for banking teams.
+      </p>
+
+      <!-- <div class="about__separator"></div> -->
+      <br />
+      <p class="about__experience" i18n>
+        <b>2022/08 - Current</b> - Software Engineer
+        <a href="https://www.bcg.com/x">at BCG</a>.
+      </p>
+      <p class="about__experiencetitle" i18n>
+        At one of the world’s leading AI and data science consultancies, I work
+        closely with U.S. teams to design and build advanced data science
+        platforms. Specializing in front-end development, I leverage modern
+        frameworks like Angular and React, implementing cutting-edge
+        architectures such as monorepos and microfrontends to enhance
+        scalability and maintainability.
       </p>
     </div>
-
   </section>
 
   <section id="projects" class="right__section projects">
-    <app-projects></app-projects>
+    <app-techs></app-techs>
   </section>
-
-  <section id="blogs" class="right__section socials">
-    <app-blog></app-blog>
-    <app-socials></app-socials>
-  </section>
-
 </div>

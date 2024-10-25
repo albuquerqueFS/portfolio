@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { SocialsComponent } from './components/socials/socials.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { BigCardComponent } from './components/projects/big-card/big-card.component';
+import { TechsComponent } from './components/techs/techs.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,8 +24,14 @@ import { BigCardComponent } from './components/projects/big-card/big-card.compon
     SocialsComponent,
     BlogComponent,
     BigCardComponent,
+    TechsComponent,
   ],
-  imports: [HttpClientModule, BrowserModule, AppRoutingModule],
+  imports: [
+    HttpClientModule,
+    BrowserModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
